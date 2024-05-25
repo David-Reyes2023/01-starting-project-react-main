@@ -8,7 +8,24 @@ const myData = [
   '38 Years Old'
 ];
 
-function Data (){
+/*function Data (){
+  
+  const data1 = myData[0];
+  const data2 = myData[1];
+  const data3 = myData[2];
+  const data4 = myData[3];
+
+  return (
+    <ul>
+      <li>nombre: {data1}</li>
+      <li>apellido: {data2}</li>
+      <li>Ocupación: {data3}</li>
+      <li>Edad: {data4}</li>
+    </ul>
+  );
+}; */
+
+function Data ({data}){
   
   const data1 = myData[0];
   const data2 = myData[1];
@@ -24,6 +41,23 @@ function Data (){
     </ul>
   );
 };
+
+/* function Data (){
+  
+  const data1 = myData[0];
+  const data2 = myData[1];
+  const data3 = myData[2];
+  const data4 = myData[3];
+
+  return (
+    <ul>
+      <li>nombre: {data1}</li>
+      <li>apellido: {data2}</li>
+      <li>Ocupación: {data3}</li>
+      <li>Edad: {data4}</li>
+    </ul>
+  );
+}; */
 
 
 
@@ -54,7 +88,7 @@ function App() {
       
       <main>
         <h2>Time to get started!</h2>
-        <Data/>
+        <Data data = {myData}/>
       </main>
     </div>
   );
